@@ -1,0 +1,28 @@
+﻿Nome do dataset: ;delhivery.csv;
+Descrição:  ;Esse conjunto de dados concentra-se nas operações da Delhivery, fornecendo informações detalhadas sobre viagens e entregas. Ele inclui dados das fases de teste e treinamento, carimbos de data e hora da criação da viagem, identificadores exclusivos para programações de rotas e viagens, tipos de transporte, detalhes completos da carga do caminhão, informações sobre carretas, detalhes de origem e destino, horários de início e término das viagens, horários de entrega, distâncias e vários campos desconhecidos que podem fornecer informações adicionais após uma análise mais aprofundada.;
+Link: ;https://www.kaggle.com/datasets/devarajv88/delhivery-logistics-dataset/data;
+Nome do Atributo;Descrição;Tipo
+data;Identificador de conjunto de dados (treinamento ou teste);string
+trip_creation_time;Horário de criação da viagem;datetime
+route_schedule_uuid;UUID da rota programada;string
+route_type;Tipo de rota (Carting, Linehaul, etc.);string
+trip_uuid;UUID da viagem;string
+source_center;Centro de origem;string
+source_name;Nome do centro de origem;string
+destination_center;Centro de destino;string
+destination_name;Nome do centro de destino;string
+od_start_time;Horário de início da viagem;datetime
+od_end_time;Horário de término da viagem;datetime
+start_scan_to_end_scan;Tempo total de varredura do início ao fim (em segundos);float
+is_cutoff;Indicador de corte na viagem;bool
+cutoff_factor;Fator de corte para a viagem;integer
+cutoff_timestamp;Horário do corte;datetime
+actual_distance_to_destination;Distância real até o destino (em km);float
+actual_time;Tempo real da viagem (em minutos);float
+osrm_time;Tempo estimado da viagem pelo sistema OSRM (em minutos);float
+osrm_distance;Distância estimada pelo sistema OSRM (em km);float
+factor;Fator de ajuste do tempo real sobre o tempo OSRM;float
+segment_actual_time;Tempo real do segmento da viagem (em minutos);float
+segment_osrm_time;Tempo estimado do segmento da viagem pelo sistema OSRM (em minutos);float
+segment_osrm_distance;Distância estimada do segmento da viagem pelo sistema OSRM (em km);float
+segment_factor;Fator de ajuste do tempo real sobre o tempo estimado do segmento;float
